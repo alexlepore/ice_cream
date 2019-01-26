@@ -1,0 +1,28 @@
+<style media="screen">
+
+  body{
+    background-color: rgb(192, 158, 45);
+  }
+  p{
+    color: white;
+  }
+  li {
+    height : 100px;
+    width: 100px;
+    color: rgb(192, 158, 45);
+    background-color: white;
+    margin-bottom: 20px;
+  }
+</style>
+
+<p>from here you can enter, any of the following names into the url after /all/ </p>
+<p>and you will be redirect to that flavor only</p>
+
+
+<ul>
+{{#each flavors }}
+  <li><h3>{{name}}</h3>
+  <h3>Price: {{price}}</h3>
+  </li> 
+{{/each}}
+</ul>
